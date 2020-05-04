@@ -8,6 +8,8 @@ public class GalleryItem {
     private String mCaption;
     private String mID;
     private String mURL;
+    private double lat;
+    private double lon;
     private String mOwner;
 
     public String getOwner() {
@@ -24,6 +26,22 @@ public class GalleryItem {
                 .appendPath(mOwner)
                 .appendPath(mID)
                 .build();
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLon() {
+        return lon;
+    }
+
+    public void setLon(double lon) {
+        this.lon = lon;
     }
 
     @NonNull
